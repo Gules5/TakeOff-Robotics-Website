@@ -111,9 +111,9 @@ export default function Home() {
 
       {/* 4. HERO SECTION */}
       <section className="relative min-h-screen flex flex-col items-center justify-center z-20 overflow-hidden pt-24">
-        <div className="text-center space-y-4 px-4 w-full max-w-[100vw]">
+        <div className="text-center space-y-4 px-0 w-full max-w-[100vw]">
           <motion.h1 
-            className="text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-black tracking-tighter uppercase whitespace-nowrap inline-block"
+            className="text-6xl sm:text-7xl md:text-8xl lg:text-[9vw] font-black tracking-tighter uppercase whitespace-nowrap inline-block"
             style={{ 
                color: '#ED1C24',
                filter: 'drop-shadow(8px 8px 0px rgba(0,0,0,0.15))' 
