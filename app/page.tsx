@@ -110,8 +110,18 @@ export default function Home() {
       </div>
 
       {/* 4. HERO SECTION */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center z-20 overflow-hidden pt-24">
-        <div className="text-center space-y-4 px-0 w-full max-w-[100vw]">
+      <section className="relative min-h-screen flex flex-col items-center justify-start z-20 overflow-hidden pt-24">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            //Combines a gradient overlay with the background image
+            backgroundImage: `linear-gradient(rgba(144, 144, 144, 0.2), rgba(0,0,0,0.2)), url("/TitleImage.JPG")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 1,
+          }}
+        />
+        <div className="text-center space-y-4 px-0 w-full max-w-[100vw] relative z-10">
           <motion.h1 
             className="text-6xl sm:text-7xl md:text-8xl lg:text-[9vw] font-black tracking-tighter uppercase whitespace-nowrap inline-block"
             style={{ 
@@ -148,14 +158,15 @@ export default function Home() {
             </p>
           </motion.div>
 
+          {/* Bouncing Button */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, type: "spring" }}
-            className="pt-12"
+            className="pt-75"
           >
             <button 
-              className="bg-black text-white border-4 border-black px-12 py-6 font-black text-2xl md:text-4xl shadow-[10px_10px_0px_0px_#ED1C24] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all uppercase italic flex items-center gap-6 mx-auto"
+              className="bg-black text-white border-4 border-black px-12 py-6 font-black text-2xl md:text-4xl shadow-[10px_10px_0px_0px_#ED1C24] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all uppercase italic flex items-center gap-6 mx-auto "
             >
               BUILD NOW 
               <span className="text-3xl md:text-5xl">→</span>
