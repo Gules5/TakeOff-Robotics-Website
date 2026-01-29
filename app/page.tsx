@@ -48,7 +48,7 @@ export default function Home() {
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-25">
         <div className="absolute inset-0" style={{
           backgroundImage: `
-            linear-gradient(#004E89 1px, transparent 1px), 
+            linear-gradient(#004E89 1px, transparent 1px),
             linear-gradient(90deg, #004E89 1px, transparent 1px)
           `,
           backgroundSize: '40px 40px',
@@ -77,7 +77,10 @@ export default function Home() {
           </div>
 
           <div className="flex space-x-2">
-            <motion.a href="#home" className="px-3 py-1 md:px-4 md:py-2 font-black text-white hover:bg-[#ED1C24] transition-all text-sm md:text-lg uppercase">
+            <motion.a href="/test" className="px-3 py-1 md:px-4 md:py-2 font-black text-white hover:bg-[#ED1C24] transition-all text-sm md:text-lg uppercase">
+              Test
+            </motion.a>
+            <motion.a href="/" className="px-3 py-1 md:px-4 md:py-2 font-black text-white hover:bg-[#ED1C24] transition-all text-sm md:text-lg uppercase">
               Home
             </motion.a>
             <motion.div 
@@ -98,8 +101,8 @@ export default function Home() {
                     exit={{ opacity: 0, y: 10 }}
                   >
                     <div className="flex flex-col">
-                      <a href="#team" className="px-4 py-3 text-black font-black hover:bg-[#ED1C24] hover:text-white border-b-4 border-black transition-colors uppercase">OUR TEAM</a>
-                      <a href="#projects" className="px-4 py-3 text-black font-black hover:bg-[#ED1C24] hover:text-white transition-colors uppercase">PROJECTS</a>
+                      <a href="team" className="px-4 py-3 text-black font-black hover:bg-[#ED1C24] hover:text-white border-b-4 border-black transition-colors uppercase">OUR TEAM</a>
+                      <a href="projects" className="px-4 py-3 text-black font-black hover:bg-[#ED1C24] hover:text-white transition-colors uppercase">PROJECTS</a>
                     </div>
                   </motion.div>
                 )}
@@ -111,7 +114,7 @@ export default function Home() {
 
       {/* 4. HERO SECTION */}
       <section className="relative min-h-screen flex flex-col items-center justify-start z-20 overflow-hidden pt-24">
-        <div 
+        <div //image
           className="absolute inset-0 z-0"
           style={{
             //Combines a gradient overlay with the background image
@@ -120,6 +123,7 @@ export default function Home() {
             backgroundPosition: 'center',
             opacity: 1,
           }}
+          
         />
         <div className="text-center space-y-4 px-0 w-full max-w-[100vw] relative z-10">
           <motion.h1 
@@ -174,8 +178,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
-      {/* 5. MISSION SECTION */}
+        
+        {/* 5. MISSION SECTION */}
       <section className="py-24 px-6 relative z-20 flex justify-center">
         <div className="max-w-5xl w-full text-center border-8 border-black p-12 bg-white shadow-[20px_20px_0px_0px_#004E89] relative">
           <div className="absolute -top-10 -left-6 bg-[#ED1C24] text-white px-4 py-2 border-4 border-black font-black -rotate-6 text-xl md:text-2xl shadow-lg">
@@ -189,6 +193,11 @@ export default function Home() {
           </p>
         </div>
       </section>
+     
+        
+
+      
+      
     </div>
   );
 }
