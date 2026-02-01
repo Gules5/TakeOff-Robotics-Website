@@ -23,7 +23,18 @@ export default function Team() {
 
   return (
 
-    <div className="min-h-500 bg-[#a82328]">
+    <div className="relative min-h-5000 bg-[#a82328]">
+
+      {/* Background Image mixing */}
+      
+      <div className="absolute top-0 left-0 w-full h-full" 
+      style={{
+        backgroundImage: 'url(/DottedBackground.png)',
+        backgroundSize: 'auto',
+        backgroundRepeat: 'repeat',
+        opacity:0.05,
+      }}/>
+
       {/* 2. THE ONLY SCROLL INDICATOR (Right Side) */}
       <div className="fixed right-4 md:right-8 top-1/2 -translate-y-1/2 z-[100] h-32 md:h-48 w-2 md:w-3 bg-black/10 border-2 border-black rounded-full overflow-hidden">
         <motion.div
@@ -93,35 +104,63 @@ export default function Team() {
     
       {/* Page Start */}
 
-      <div className='overflow-hidden min-h-100 min-w-full'>
+      <div className='relative overflow-hidden min-h-100 min-w-full z-10'>
         {/* Title text */}
-        <h1 className='text-[100px] text-center mt-[100px] font-[monospace]'>The Team</h1>
+        <h1 className='text-[100px] text-center mt-[100px] font-black tracking-tighter uppercase'>The Team</h1>
         
-        <div className='mt-10 max-w-[80%] mx-auto overflow-visible pb-20'>
+        <div className='mt-10 max-w-[85%] mx-auto overflow-visible pb-20'>
           {/*Captain Header and Underscore*/}
-          <h2 className='relative text-[50px] text-center mt-[40px] mb-[10px] max-w-[80%] mx-auto border-b-2 border-black font-[monospace]'>The Captains</h2>
+          <h2 className='relative text-[50px] text-center mt-[40px] mb-[10px] max-w-[80%] mx-auto border-b-2 border-black font-[monospace]'>The Executives</h2>
           
           {/*Captain Grid*/}
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-3 gap-8 max-w-[85%] mx-auto">
 
-            <div className=" bg-white border-4 border-black rounded-lg p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <img src="/Sinaj.jpg" alt="Sinaj" className="h-100 w-100 bg-gray-200 rounded-lg mb-4"></img>
+            <div className=" bg-white border-4 border-black rounded-lg p-4 mx-auto shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <img src="/Sinaj.jpg" alt="Sinaj" className="h-[300px] w-[300px] bg-gray-200 rounded-lg mb-4"></img>
               <h3 className="text-xl font-bold text-center text-black">Sinaj</h3>
               <p className="text-center text-black">Big Boss Man</p>
             </div> 
 
-            <div className=" bg-white border-4 border-black rounded-lg p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <img src="/Sinaj2.jpg" alt="Sinaj" className="h-340px w-340px bg-gray-200 rounded-lg mb-4"></img>
+            <div className=" bg-white border-4 border-black rounded-lg p-4 mx-auto shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <img src="/Sinaj2.jpg" alt="Sinaj" className="h-[300px] w-[300px] bg-gray-200 rounded-lg mb-4"></img>
               <h3 className="text-xl font-bold text-center text-black">Sinaj</h3>
               <p className="text-center text-black">Big Boss Man</p>
             </div> 
 
-            <div className=" bg-white border-4 border-black rounded-lg p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <img src="/Sinaj.jpg" alt="Sinaj" className="h-100 w-100 bg-gray-200 rounded-lg mb-4"></img>
+            <div className=" bg-white border-4 border-black rounded-lg p-4 mx-auto shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <img src="/Sinaj.jpg" alt="Sinaj" className="h-[300px] w-[300px] bg-gray-200 rounded-lg mb-4"></img>
               <h3 className="text-xl font-bold text-center text-black">Sinaj</h3>
               <p className="text-center text-black">Big Boss Man</p>
             </div> 
 
+          </div>
+
+          {/*Captain Grid*/}
+          <div className="grid grid-cols-4 gap-8 mt-20">
+
+            <div className=" bg-white border-4 border-black rounded-lg p-4 mx-auto shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <img src="/Sinaj.jpg" alt="Sinaj" className="h-[250px] w-[250px] bg-gray-200 rounded-lg mb-4"></img>
+              <h3 className="text-xl font-bold text-center text-black">Sinaj</h3>
+              <p className="text-center text-black">Big Boss Man</p>
+            </div> 
+
+            <div className=" bg-white border-4 border-black rounded-lg p-4 mx-auto shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <img src="/Sinaj2.jpg" alt="Sinaj" className="h-[250px] w-[250px] bg-gray-200 rounded-lg mb-4"></img>
+              <h3 className="text-xl font-bold text-center text-black">Sinaj</h3>
+              <p className="text-center text-black">Big Boss Man</p>
+            </div> 
+
+            <div className=" bg-white border-4 border-black rounded-lg p-4 mx-auto shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <img src="/Sinaj.jpg" alt="Sinaj" className="h-[250px] w-[250px] bg-gray-200 rounded-lg mb-4"></img>
+              <h3 className="text-xl font-bold text-center text-black">Sinaj</h3>
+              <p className="text-center text-black">Big Boss Man</p>
+            </div> 
+
+            <div className=" bg-white border-4 border-black rounded-lg p-4 mx-auto shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <img src="/Sinaj.jpg" alt="Sinaj" className="h-[250px] w-[250px] bg-gray-200 rounded-lg mb-4"></img>
+              <h3 className="text-xl font-bold text-center text-black">Sinaj</h3>
+              <p className="text-center text-black">Big Boss Man</p>
+            </div> 
           </div>
 
           {/* This can be copy and pasted as much as is needed. :D 
