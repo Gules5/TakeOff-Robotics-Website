@@ -77,9 +77,6 @@ export default function Home() {
           </div>
 
           <div className="flex space-x-2">
-            <motion.a href="/test" className="px-3 py-1 md:px-4 md:py-2 font-black text-white hover:bg-[#ED1C24] transition-all text-sm md:text-lg uppercase">
-              Test
-            </motion.a>
             <motion.a href="/" className="px-3 py-1 md:px-4 md:py-2 font-black text-white hover:bg-[#ED1C24] transition-all text-sm md:text-lg uppercase">
               Home
             </motion.a>
